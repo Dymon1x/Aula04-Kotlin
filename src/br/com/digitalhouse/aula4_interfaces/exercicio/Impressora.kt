@@ -5,11 +5,12 @@ class Impressora {
 
     fun adicionaNaFila(imprimivel: Imprimivel) = listaImprimivel.add(imprimivel)
 
+//    utilizando o var args
     fun adicionaNaFila(vararg imprimiveis: Imprimivel) {
         listaImprimivel.addAll(imprimiveis) // adiciona todas os valores das classes
     }
 
-//    utilizando o var args
+
 //    fun adicionaNaFila(vararg imprimiveis: Imprimivel) = imprimiveis.forEach { // inline function
 //        adicionaNaFila(it)
 //    }
